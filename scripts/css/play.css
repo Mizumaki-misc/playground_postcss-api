@@ -1,0 +1,24 @@
+.foo {
+  font-size: 1.2rem;
+  color: blue;
+}
+
+.bar {
+  font-size: 1.2rem;
+  color: yellow;
+}
+
+.bar::after {
+  content: 'After bar, go to eat ramen!';
+  background-color: black;
+}
+
+.bar:hover::after {
+  background-color: red;
+}
+
+@media (max-width: 640px) {
+  .foo {
+    font-size: 1rem;
+  }
+}
